@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F854AA33223877350026E9CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F854AA32223877350026E9CE /* AppDelegate.swift */; };
+		F854AA35223877350026E9CE /* StudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F854AA34223877350026E9CE /* StudentsViewController.swift */; };
+		F854AA38223877350026E9CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F854AA36223877350026E9CE /* Main.storyboard */; };
+		F854AA3A223877360026E9CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F854AA39223877360026E9CE /* Assets.xcassets */; };
+		F854AA3D223877360026E9CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F854AA3B223877360026E9CE /* LaunchScreen.storyboard */; };
+		F854AA48223877360026E9CE /* NorthwestKCProgrammingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F854AA47223877360026E9CE /* NorthwestKCProgrammingAppTests.swift */; };
+		F854AA53223877360026E9CE /* NorthwestKCProgrammingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F854AA52223877360026E9CE /* NorthwestKCProgrammingAppUITests.swift */; };
+		F854AA6122387B5E0026E9CE /* SchoolsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F854AA6022387B5E0026E9CE /* SchoolsTableViewController.swift */; };
+		F854AA6322387B9D0026E9CE /* TeamsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F854AA6222387B9D0026E9CE /* TeamsTableViewController.swift */; };
+		F854AA6522387BF30026E9CE /* NewSchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F854AA6422387BF30026E9CE /* NewSchoolViewController.swift */; };
+		F854AA6722387C000026E9CE /* NewTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F854AA6622387C000026E9CE /* NewTeamViewController.swift */; };
+		F854AA6922387DE20026E9CE /* modelClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F854AA6822387DE20026E9CE /* modelClasses.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F854AA44223877360026E9CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F854AA27223877350026E9CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F854AA2E223877350026E9CE;
+			remoteInfo = NorthwestKCProgrammingApp;
+		};
+		F854AA4F223877360026E9CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F854AA27223877350026E9CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F854AA2E223877350026E9CE;
+			remoteInfo = NorthwestKCProgrammingApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F854AA2F223877350026E9CE /* NorthwestKCProgrammingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NorthwestKCProgrammingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F854AA32223877350026E9CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F854AA34223877350026E9CE /* StudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsViewController.swift; sourceTree = "<group>"; };
+		F854AA37223877350026E9CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F854AA39223877360026E9CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F854AA3C223877360026E9CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F854AA3E223877360026E9CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F854AA43223877360026E9CE /* NorthwestKCProgrammingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NorthwestKCProgrammingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F854AA47223877360026E9CE /* NorthwestKCProgrammingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthwestKCProgrammingAppTests.swift; sourceTree = "<group>"; };
+		F854AA49223877360026E9CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F854AA4E223877360026E9CE /* NorthwestKCProgrammingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NorthwestKCProgrammingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F854AA52223877360026E9CE /* NorthwestKCProgrammingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthwestKCProgrammingAppUITests.swift; sourceTree = "<group>"; };
+		F854AA54223877360026E9CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F854AA6022387B5E0026E9CE /* SchoolsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsTableViewController.swift; sourceTree = "<group>"; };
+		F854AA6222387B9D0026E9CE /* TeamsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsTableViewController.swift; sourceTree = "<group>"; };
+		F854AA6422387BF30026E9CE /* NewSchoolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSchoolViewController.swift; sourceTree = "<group>"; };
+		F854AA6622387C000026E9CE /* NewTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTeamViewController.swift; sourceTree = "<group>"; };
+		F854AA6822387DE20026E9CE /* modelClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modelClasses.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F854AA2C223877350026E9CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F854AA40223877360026E9CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F854AA4B223877360026E9CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F854AA26223877350026E9CE = {
+			isa = PBXGroup;
+			children = (
+				F854AA31223877350026E9CE /* NorthwestKCProgrammingApp */,
+				F854AA46223877360026E9CE /* NorthwestKCProgrammingAppTests */,
+				F854AA51223877360026E9CE /* NorthwestKCProgrammingAppUITests */,
+				F854AA30223877350026E9CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F854AA30223877350026E9CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F854AA2F223877350026E9CE /* NorthwestKCProgrammingApp.app */,
+				F854AA43223877360026E9CE /* NorthwestKCProgrammingAppTests.xctest */,
+				F854AA4E223877360026E9CE /* NorthwestKCProgrammingAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F854AA31223877350026E9CE /* NorthwestKCProgrammingApp */ = {
+			isa = PBXGroup;
+			children = (
+				F854AA32223877350026E9CE /* AppDelegate.swift */,
+				F854AA34223877350026E9CE /* StudentsViewController.swift */,
+				F854AA36223877350026E9CE /* Main.storyboard */,
+				F854AA6822387DE20026E9CE /* modelClasses.swift */,
+				F854AA6422387BF30026E9CE /* NewSchoolViewController.swift */,
+				F854AA6622387C000026E9CE /* NewTeamViewController.swift */,
+				F854AA6222387B9D0026E9CE /* TeamsTableViewController.swift */,
+				F854AA6022387B5E0026E9CE /* SchoolsTableViewController.swift */,
+				F854AA39223877360026E9CE /* Assets.xcassets */,
+				F854AA3B223877360026E9CE /* LaunchScreen.storyboard */,
+				F854AA3E223877360026E9CE /* Info.plist */,
+			);
+			path = NorthwestKCProgrammingApp;
+			sourceTree = "<group>";
+		};
+		F854AA46223877360026E9CE /* NorthwestKCProgrammingAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F854AA47223877360026E9CE /* NorthwestKCProgrammingAppTests.swift */,
+				F854AA49223877360026E9CE /* Info.plist */,
+			);
+			path = NorthwestKCProgrammingAppTests;
+			sourceTree = "<group>";
+		};
+		F854AA51223877360026E9CE /* NorthwestKCProgrammingAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F854AA52223877360026E9CE /* NorthwestKCProgrammingAppUITests.swift */,
+				F854AA54223877360026E9CE /* Info.plist */,
+			);
+			path = NorthwestKCProgrammingAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F854AA2E223877350026E9CE /* NorthwestKCProgrammingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F854AA57223877360026E9CE /* Build configuration list for PBXNativeTarget "NorthwestKCProgrammingApp" */;
+			buildPhases = (
+				F854AA2B223877350026E9CE /* Sources */,
+				F854AA2C223877350026E9CE /* Frameworks */,
+				F854AA2D223877350026E9CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NorthwestKCProgrammingApp;
+			productName = NorthwestKCProgrammingApp;
+			productReference = F854AA2F223877350026E9CE /* NorthwestKCProgrammingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F854AA42223877360026E9CE /* NorthwestKCProgrammingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F854AA5A223877360026E9CE /* Build configuration list for PBXNativeTarget "NorthwestKCProgrammingAppTests" */;
+			buildPhases = (
+				F854AA3F223877360026E9CE /* Sources */,
+				F854AA40223877360026E9CE /* Frameworks */,
+				F854AA41223877360026E9CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F854AA45223877360026E9CE /* PBXTargetDependency */,
+			);
+			name = NorthwestKCProgrammingAppTests;
+			productName = NorthwestKCProgrammingAppTests;
+			productReference = F854AA43223877360026E9CE /* NorthwestKCProgrammingAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F854AA4D223877360026E9CE /* NorthwestKCProgrammingAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F854AA5D223877360026E9CE /* Build configuration list for PBXNativeTarget "NorthwestKCProgrammingAppUITests" */;
+			buildPhases = (
+				F854AA4A223877360026E9CE /* Sources */,
+				F854AA4B223877360026E9CE /* Frameworks */,
+				F854AA4C223877360026E9CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F854AA50223877360026E9CE /* PBXTargetDependency */,
+			);
+			name = NorthwestKCProgrammingAppUITests;
+			productName = NorthwestKCProgrammingAppUITests;
+			productReference = F854AA4E223877360026E9CE /* NorthwestKCProgrammingAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F854AA27223877350026E9CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Bourishetty,Karun";
+				TargetAttributes = {
+					F854AA2E223877350026E9CE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F854AA42223877360026E9CE = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F854AA2E223877350026E9CE;
+					};
+					F854AA4D223877360026E9CE = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F854AA2E223877350026E9CE;
+					};
+				};
+			};
+			buildConfigurationList = F854AA2A223877350026E9CE /* Build configuration list for PBXProject "NorthwestKCProgrammingApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F854AA26223877350026E9CE;
+			productRefGroup = F854AA30223877350026E9CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F854AA2E223877350026E9CE /* NorthwestKCProgrammingApp */,
+				F854AA42223877360026E9CE /* NorthwestKCProgrammingAppTests */,
+				F854AA4D223877360026E9CE /* NorthwestKCProgrammingAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F854AA2D223877350026E9CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F854AA3D223877360026E9CE /* LaunchScreen.storyboard in Resources */,
+				F854AA3A223877360026E9CE /* Assets.xcassets in Resources */,
+				F854AA38223877350026E9CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F854AA41223877360026E9CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F854AA4C223877360026E9CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F854AA2B223877350026E9CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F854AA6522387BF30026E9CE /* NewSchoolViewController.swift in Sources */,
+				F854AA6122387B5E0026E9CE /* SchoolsTableViewController.swift in Sources */,
+				F854AA35223877350026E9CE /* StudentsViewController.swift in Sources */,
+				F854AA6922387DE20026E9CE /* modelClasses.swift in Sources */,
+				F854AA6322387B9D0026E9CE /* TeamsTableViewController.swift in Sources */,
+				F854AA6722387C000026E9CE /* NewTeamViewController.swift in Sources */,
+				F854AA33223877350026E9CE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F854AA3F223877360026E9CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F854AA48223877360026E9CE /* NorthwestKCProgrammingAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F854AA4A223877360026E9CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F854AA53223877360026E9CE /* NorthwestKCProgrammingAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F854AA45223877360026E9CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F854AA2E223877350026E9CE /* NorthwestKCProgrammingApp */;
+			targetProxy = F854AA44223877360026E9CE /* PBXContainerItemProxy */;
+		};
+		F854AA50223877360026E9CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F854AA2E223877350026E9CE /* NorthwestKCProgrammingApp */;
+			targetProxy = F854AA4F223877360026E9CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F854AA36223877350026E9CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F854AA37223877350026E9CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F854AA3B223877360026E9CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F854AA3C223877360026E9CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F854AA55223877360026E9CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F854AA56223877360026E9CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F854AA58223877360026E9CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NorthwestKCProgrammingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nwmsu.NorthwestKCProgrammingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F854AA59223877360026E9CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NorthwestKCProgrammingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nwmsu.NorthwestKCProgrammingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F854AA5B223877360026E9CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NorthwestKCProgrammingAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nwmsu.NorthwestKCProgrammingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NorthwestKCProgrammingApp.app/NorthwestKCProgrammingApp";
+			};
+			name = Debug;
+		};
+		F854AA5C223877360026E9CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NorthwestKCProgrammingAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nwmsu.NorthwestKCProgrammingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NorthwestKCProgrammingApp.app/NorthwestKCProgrammingApp";
+			};
+			name = Release;
+		};
+		F854AA5E223877360026E9CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NorthwestKCProgrammingAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nwmsu.NorthwestKCProgrammingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NorthwestKCProgrammingApp;
+			};
+			name = Debug;
+		};
+		F854AA5F223877360026E9CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NorthwestKCProgrammingAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nwmsu.NorthwestKCProgrammingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NorthwestKCProgrammingApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F854AA2A223877350026E9CE /* Build configuration list for PBXProject "NorthwestKCProgrammingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F854AA55223877360026E9CE /* Debug */,
+				F854AA56223877360026E9CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F854AA57223877360026E9CE /* Build configuration list for PBXNativeTarget "NorthwestKCProgrammingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F854AA58223877360026E9CE /* Debug */,
+				F854AA59223877360026E9CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F854AA5A223877360026E9CE /* Build configuration list for PBXNativeTarget "NorthwestKCProgrammingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F854AA5B223877360026E9CE /* Debug */,
+				F854AA5C223877360026E9CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F854AA5D223877360026E9CE /* Build configuration list for PBXNativeTarget "NorthwestKCProgrammingAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F854AA5E223877360026E9CE /* Debug */,
+				F854AA5F223877360026E9CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F854AA27223877350026E9CE /* Project object */;
+}
