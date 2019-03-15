@@ -20,10 +20,19 @@ class NewSchoolViewController: UIViewController {
     }
     
     @IBAction func done(_ sender: Any) {
-        let school:School = School.init(name: NameTF.text!,coach: coachTF.text!)
-        Schools.shared.add(school: school)
+        if NameTF.text! == "" || coachTF.text! == ""{
+            let alert = UIAlertController(title: "Alert!",
+                                          message: "Enter the values",
+                preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default,
+                                          handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        else{
+        Schools.shared.add(school: School(name: NameTF.text!,coach: coachTF.text!))
         self.dismiss(animated: true, completion: nil)
-        print(Schools.shared.numSchools())
+        //print(Schools.shared.numSchools())
+        }
     }
     
     

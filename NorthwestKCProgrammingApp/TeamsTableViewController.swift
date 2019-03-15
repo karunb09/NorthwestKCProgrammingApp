@@ -13,7 +13,7 @@ class TeamsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -22,7 +22,10 @@ class TeamsTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-    var teams:Team!
+    var school:School!
+    
+    @IBOutlet weak var teamsNAV: UINavigationItem!
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -30,18 +33,18 @@ class TeamsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return School.share.teams.count
+        return school.teams.count
     }
-
-    /*
+    
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        var selectedCell:UITableViewCell =tableView.
+//    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "teamCell", for: indexPath)
+        cell.textLabel?.text = school.teams[indexPath.row].teamName
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -80,12 +83,22 @@ class TeamsTableViewController: UITableViewController {
 
     
     // MARK: - Navigation
-
+    override func viewWillAppear(_ animated: Bool) {
+        teamsNAV.title = school.name
+        tableView.reloadData()
+    }
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Pass the selected object to the new view controller.
-//        teamDVC. = Restaurants.restaurants[tableView.indexPathForSelectedRow!.row]
+        if segue.identifier == "studentsView"{
+            let studentsVC = segue.destination as! StudentsViewController
+            studentsVC.students=school.teams[tableView.indexPathForSelectedRow!.row]
+            //print(studentsVC)
+        }
+        if segue.identifier == "newTeam"{
+            let newteamTVC = segue.destination as! NewTeamViewController
+            
+            newteamTVC.testschool = school
+        }
     }
- 
-
 }

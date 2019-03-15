@@ -30,7 +30,7 @@ class Schools {
     
     func delete(school:School){
         for i in 0 ..< schools.count {
-            if school.Schoolname == schools[i].Schoolname{
+            if school.name == schools[i].name{
                 schools.remove(at: i)
             }
         }
@@ -40,20 +40,20 @@ class Schools {
 }
 
 class School{
-    var Schoolname:String
-    var Schoolcoach:String
-    var teams:[Team]
+    var name:String
+    var coach:String
+    var teams:[Team] = []
     
-    init(){
-        self.Schoolname = ""
-        self.Schoolcoach = ""
-        self.teams = []
+    init(name:String,coach:String){
+        self.name = name
+        self.coach = coach
+        self.teams=[]
     }
     
-    func add(name:String,coach:String){
-        self.Schoolname = name
-        self.Schoolcoach = coach
-    }
+//    func add(name:String,coach:String){
+//        self.name = name
+//        self.coach = coach
+//    }
     
     subscript(team:Int)->Team{
         return teams[team]
@@ -63,7 +63,6 @@ class School{
         teams.append(Team.init(names: name, students: students))
     }
     
-    static var share = School()
 }
 
 

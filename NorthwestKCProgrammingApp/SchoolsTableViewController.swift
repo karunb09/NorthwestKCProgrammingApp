@@ -35,20 +35,19 @@ class SchoolsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "schoolCell")!
-        cell.textLabel?.text = Schools.shared[indexPath.row].Schoolname
-        cell.detailTextLabel?.text = Schools.shared[indexPath.row].Schoolcoach
+        cell.textLabel?.text = Schools.shared[indexPath.row].name
+        cell.detailTextLabel?.text = Schools.shared[indexPath.row].coach
 
         // Configure the cell...
 
         return cell
     }
-
-    
-    @IBOutlet var tableLBL: UITableView!
     
     override func viewWillAppear(_ animated: Bool) {
-        tableLBL.reloadData()
+        tableView.reloadData()
     }
+    
+
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -57,17 +56,18 @@ class SchoolsTableViewController: UITableViewController {
     }
     */
 
-    /*
+ 
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
         if editingStyle == .delete {
             // Delete the row from the data source
+            Schools.shared.delete(school: Schools.shared[indexPath.row])
             tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+            //tableView.reloadData()
+        }
     }
-    */
+  
 
     /*
     // Override to support rearranging the table view.
@@ -91,8 +91,10 @@ class SchoolsTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "team identifier"{
         let teamsTVC = segue.destination as! TeamsTableViewController
-        teamsTVC.teams=School.share[tableView.indexPathForSelectedRow!.row]
+        teamsTVC.school=Schools.shared[tableView.indexPathForSelectedRow!.row]
+        }
     }
 
 }

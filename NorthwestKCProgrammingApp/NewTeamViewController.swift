@@ -15,20 +15,27 @@ class NewTeamViewController: UIViewController {
     @IBOutlet weak var student1LBL: UITextField!
     @IBOutlet weak var student2LBL: UITextField!
     
+
+    @IBOutlet weak var newTeamNAV: UINavigationItem!
     
+    var testschool:School!
     
     @IBAction func done(_ sender: Any) {
-        let student:[String] = [student0LBL.text!, student1LBL.text!, student2LBL.text!]
-        //School.share.add(name: teamNameLBL.text!, students: student)
+        let students:[String] = [student0LBL.text!, student1LBL.text!, student2LBL.text!]
+ 
+        testschool.addTeam(name: teamNameLBL.text!, students: students)
+        
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func cancel(_ sender: Any) {
+        
         self.dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
+        newTeamNAV.title = testschool.name
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
